@@ -1,0 +1,50 @@
+#include<iostream>
+
+using namespace std;
+
+int arr[1000];
+
+int main()
+
+{
+
+    
+    
+    
+    int i,number,value,max=0;
+   
+    cout << "Enter the number of inputs : " << endl;
+    cin >> number ;
+    
+    cout << "Enter the elements of array" << endl;
+    
+    for(i=0;i<number;i++)
+    {
+    
+        cin >> value;
+    
+        if(max<value)
+            max=value;
+    
+    
+        arr[value]=arr[value]+1;
+    
+    }
+    
+    
+    
+    
+    for(i=0;i<=max;i++)
+    {
+        if(arr[i]>0)
+        
+        {
+            for(int j=0; j<arr[i];j++ )
+            {
+                cout << i << endl;
+            }    
+       }
+    }
+
+    return 0;
+}
